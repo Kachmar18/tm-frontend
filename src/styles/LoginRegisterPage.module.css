@@ -1,0 +1,177 @@
+@import '../styles/variables.css'; 
+
+/*Логування*/
+.loginPage {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('../assets/img/login&register_background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.formContainer {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.explanation {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inputField {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 300px;
+  margin: 5px 0;
+  transition: border-color 0.3s;
+}
+
+.inputField:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.loginButton {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #0056b3;
+}
+
+.registerLink {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.registerLink a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.registerLink a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+/*Реєстрація*/
+.registerPage {
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('../assets/img/login&register_background.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.formContainer {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.explanation {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.registerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.inputField {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  margin: 5px 0;
+  transition: border-color 0.3s;
+}
+
+.inputField:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.registerButton {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.registerButton:hover {
+  background-color: #0056b3;
+}
+
+.loginLink {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.loginLink a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.loginLink a:hover {
+  text-decoration: underline;
+}

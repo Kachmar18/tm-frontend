@@ -1,0 +1,155 @@
+@import "../styles/variables.css";
+
+.container {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Фонове зображення */
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/img/dashboard_background5.jpg") center/cover
+    no-repeat;
+  filter: brightness(0.2); /* Затемнення */
+  z-index: -1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Прозорий фон */
+  color: white;
+  z-index: 1;
+}
+
+.companyName {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #444;
+  color: white;
+  transition: right 0.3s ease;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  z-index: 2;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.userInfo {
+  text-align: center;
+  margin-top: 40px; /* Відстань зверху */
+  margin-bottom: 20px;
+}
+
+.userImage {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userName {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.userEmail {
+  font-size: 14px;
+  color: white;
+}
+
+.logoutButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: rgba(
+    255,
+    0,
+    0,
+    0.2
+  ); /* Легке підсвічування при наведенні */
+}
+
+/* Кнопка "Add New Post" */
+.addPostButton {
+  position: fixed; /* Фіксована позиція */
+  bottom: 20px; /* Відступ від нижнього краю */
+  right: 20px; /* Відступ від правого краю */
+  font-family: "Lato", sans-serif;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addPostButton:hover {
+  background-color: #0056b3;
+}
